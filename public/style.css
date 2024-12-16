@@ -46,8 +46,8 @@ body {
 main {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
-  height: 300px;
+  padding: 30px;
+  height: 500px;
 }
 
 section {

@@ -1,9 +1,9 @@
 const axios = require("axios");
 
-exports.randomduck = async (req, res) => {
+exports.nationalize = async (req, res) => {
   try {
     // const { city } = req.params;
-    const apiURL = `https://random-d.uk/api or https://random-d.uk/api/v2`;
+    const apiURL = `https://api.nationalize.io?name=nathaniel`;
     const response = await axios.get(apiURL);
     res.status(200).send(response.data);
   } catch (error) {

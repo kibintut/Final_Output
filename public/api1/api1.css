@@ -42,3 +42,25 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 18px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}
