@@ -21,7 +21,7 @@ function send() {
                   <p><strong>Humidity:</strong> ${data.current.humidity}%</p>
                   <p><strong>Wind Speed:</strong> ${data.current.wind_speed} km/h</p>
               `;
-        document.getElementById("output").innerHTML = output; // Use innerHTML to render HTML
+        document.getElementById("output").innerHTML = output;
       } else {
         document.getElementById("output").innerText =
           "No weather data found for this city.";
