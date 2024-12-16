@@ -83,14 +83,6 @@ main {
   bottom: 50px;
 }
 
-.profile1:hover,
-.profile2:hover,
-.profile3:hover {
-  background-color: transparent;
-  transition: 2s ease-in-out;
-  color: black;
-}
-
 #facebook,
 #instagram {
   width: 50px;
