@@ -1,8 +1,8 @@
 const express = require("express");
-const externalController = require("../public/controllers/externalController");
+const externalController = require("../controller/externalController");
 
 const router = express.Router();
 
-router.get("/:city", externalController.weatherstack);
+router.get("/weatherstack", externalController.getWeatherData);
 
 module.exports = router;
