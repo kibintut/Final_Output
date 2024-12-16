@@ -51,29 +51,47 @@ main {
 }
 
 section {
-  background: transparent;
-  color: black;
-  opacity: 0.5;
   padding: 1em;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 18px;
   text-align: center;
+  width: 300px;
 }
 
-section:hover {
-  color: black;
-  background-color: whitesmoke;
-  opacity: 1;
-  transition: 2s, 2s ease-in-out;
+#api1 {
+  color: white;
+  background: url(/images/clouds1.png);
 }
 
-section a {
+#api2 {
+  color: white;
+  background: url(/images/cars2.jpg);
+  background-size: cover;
+}
+
+#api3 {
+  color: white;
+  background: url(/images/jokes1.jpg);
+  background-size: cover;
+}
+section h2,
+p {
+  margin-top: 40px;
+}
+
+button {
+  margin-top: 30px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+button a {
   text-decoration: none;
-}
-
-section a:hover {
-  color: blue;
+  color: white;
 }
 h2 {
   margin-top: 0;

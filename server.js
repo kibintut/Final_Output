@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // Serve static front-end files
 app.use(express.static(path.join(__dirname, "public")));
+
 app.use("/api1/api1.html", externalRoutes);
 
 // Start the server

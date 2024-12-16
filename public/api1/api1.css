@@ -38,7 +38,7 @@ header a:hover {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/images/background_img.jpg");
+  background-image: url("/images/clouds.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -46,21 +46,59 @@ body {
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.container {
+.userI_container {
   background-color: white;
-  border-radius: 18px;
   padding: 1em;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  width: 225px;
+  margin-left: 80px;
+}
+.userI_container input {
+  text-align: center;
+}
+
+.userI_container h2,
+p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+label {
+  margin-top: 25px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 10px;
 }
 
 button {
-  border: none;
-  background-color: blue;
   color: white;
+  background-color: blue;
+  border-radius: 18px;
+  border: none;
+  padding: 8px;
+}
+
+.output_container {
+  background-color: transparent;
+  border: white 2px solid;
+  width: 60%;
+  margin-left: 150px;
   border-radius: 20px;
+  height: 550px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output_container p {
+  font-size: 12px;
+  color: white;
 }
