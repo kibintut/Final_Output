@@ -1,7 +1,7 @@
 function send() {
   const city = document.getElementById("userInput").value;
   if (!city) {
-    alert("Please enter a city name.");
+    alert("Enter a fucking city bitch!.");
     return;
   }
   fetch(`/api1/weatherstack?city=${city}`)
