@@ -2,7 +2,7 @@ const axios = require("axios");
 
 exports.getWeatherData = async (req, res) => {
   const city = req.query.city;
-  const apiKey = "e7f17156883ff52b90f83d574a3e5a5b";
+  const apiKey = "API_KEY";
   const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
 
   try {
