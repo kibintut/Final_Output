@@ -7,7 +7,3 @@
 //   .catch((error) => {
 //     console.error("Error fetching API data:", error);
 //   });
-
-const about = document.getElementById("about");
-
-function about() {}

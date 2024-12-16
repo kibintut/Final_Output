@@ -3,6 +3,6 @@ const externalController = require("../controllers/externalController");
 
 const router = express.Router();
 
-router.get("/about.html", externalController.randomduck);
+router.get("/api1", externalController.randomduck);
 
 module.exports = router;
