@@ -10,6 +10,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Use external routes
 app.use("/api1", externalRoutes);
+app.use("/api2", externalRoutes);
+app.use("/api3", externalRoutes);
 
 // Start the server
 app.listen(PORT, () => {

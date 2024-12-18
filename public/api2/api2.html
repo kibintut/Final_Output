@@ -15,5 +15,20 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <div class="userI_container">
+        <h2>How to use:</h2>
+        <p>Simply enter a random number to get a random car.</p>
+        <label for="city">Enter Car:</label>
+        <input type="text" placeholder="Enter Number Here..." id="userInput" />
+        <br />
+        <button onclick="send()">Get Car</button>
+      </div>
+
+      <div class="output_container">
+        <p id="output">Car details will be displayed here...</p>
+      </div>
+    </main>
+    <script src="api2.js"></script>
   </body>
 </html>

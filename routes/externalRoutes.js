@@ -3,6 +3,7 @@ const externalController = require("../controller/externalController");
 
 const router = express.Router();
 
-router.get("/weatherstack", externalController.getWeatherData);
-
+router.get("/dogs", externalController.getDogImage);
+router.get("/cars", externalController.getCarData);
+router.get("/jokes", externalController.getJokeData);
 module.exports = router;

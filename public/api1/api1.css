@@ -71,9 +71,9 @@ label {
   margin-top: 25px;
 }
 
-input {
+#artist,
+#title {
   padding: 8px;
-  margin-top: 10px;
 }
 
 button {

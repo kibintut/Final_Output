@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>WeatherStack API</h1>
+      <h1>Dogs API</h1>
       <nav>
         <ul>
           <li><a href="/">Back</a></li>
@@ -18,17 +18,13 @@
     <main>
       <div class="userI_container">
         <h2>How to use:</h2>
-        <p>
-          Simply enter the city name you want to get the weather for and click
-          the button below.
-        </p>
-        <label for="city">Enter City:</label>
-        <input type="text" placeholder="Enter City Here..." id="userInput" />
+        <p>Simply click on the button below to get a random dog image.</p>
         <br />
         <button onclick="send()">Send</button>
       </div>
       <div class="output_container">
-        <p id="output">Weather data will be displayed here...</p>
+        <p id="output">Dog image will be displayed here...</p>
+        <img src="" alt="" id="img_elem" style="display: none" />
       </div>
     </main>
     <script src="api1.js"></script>

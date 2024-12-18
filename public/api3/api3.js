@@ -1,6 +1,5 @@
 function send() {
-  const img = document.getElementById("img_elem");
-  fetch(`/api1/dogs`)
+  fetch(`/api3/jokes`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
@@ -10,10 +9,14 @@ function send() {
     .then((data) => {
       // Check if the data contains the expected structure
       if (data) {
-        img.src = data.url;
-        img.style.display = "block";
+        const output = `
+                      <h1>${data.setup}</h1>
+                      <p><strong> Punchline: <strong><p>
+                      <h2><strong>${data.punchline}</strong></h2>
+                  `;
+        document.getElementById("output").innerHTML = output;
       } else {
-        document.getElementById("output").innerText = "No dog image to show up";
+        document.getElementById("output").innerText = "Failed to fetch joke.";
       }
     })
     .catch((error) => {
